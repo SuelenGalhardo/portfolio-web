@@ -1,0 +1,10 @@
+.footer {
+  display: flex;
+  justify-content: end;
+  background-color: #a2b63043;
+  &__copy {
+    font-size: 1.2rem;
+    color: rgb(188, 199, 35);
+    margin: 20px 50px 20px;
+  }
+}
