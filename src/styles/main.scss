@@ -1,8 +1,8 @@
-@import './reset.scss';
-@import './variables.scss';
-@import './mixins.scss';
-@import './header.scss';
+@import './core/reset.scss';
+@import './core/variables.scss';
+@import './core/mixin.scss';
+@import './layout/header.scss';
 //@import './projectos.scss';
 //@import './skills.scss';
 //@import './about.scss';
-@import './footer.scss';
+@import './layout/footer.scss';
