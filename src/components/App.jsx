@@ -2,8 +2,9 @@
 //import { useState, useRef, useState } from 'react'
 
 
-import '../styles/main.scss';
-
+import '../styles/App.scss';
+/* The following line can be included in your src/index.js or App.js file */
+//import './App.scss';
 //import Main from './Main';
 //mport ProjectSection from './ProjectSection';
 

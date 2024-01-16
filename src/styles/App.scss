@@ -6,3 +6,8 @@
 //@import './skills.scss';
 //@import './about.scss';
 @import './layout/footer.scss';
+// Import all of Bootstrap's CSS
+/* The following line can be included in a src/App.scss */
+//@import '~bootstrap/scss/bootstrap.scss';
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
