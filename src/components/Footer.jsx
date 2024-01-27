@@ -2,11 +2,10 @@ const Footer = () => {
     return (
       <>
         <footer className="footer">
-        S
-          <small>
-            <p className='footer__copy'>&copy; Suelen Galhardo</p>
-          </small>
-        
+        <div className="footer__div">
+                  <p className='footer__copy'>&copy; Suelen Galhardo</p>
+                  <span>2024</span>
+          </div>
         </footer>
       </>
     );

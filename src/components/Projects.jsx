@@ -43,8 +43,7 @@ const projects = ({ projects, hiddenClassProjects }) => {
   const projectLi = currentProjects.map((project) => {
     return (
       <li key={project.id} className="projects__container">
-        <p className="projects__container__title">{project.name}</p>
-        <div className="containerLogos">
+        <p className="projects__container__title">{project.name}</p>        <div className="containerLogos">
           <a
             href={project.url_project}
             className="linkProject"
