@@ -1,8 +1,14 @@
-//import React from 'react';
+import React from 'react';
 import suelenLogo from '../assets/logosuelen.png'
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
+import git from '../assets/git.svg';
+import linkedin from '../assets/linkedin.svg';
+
+
+
+
 
 const Header =() =>{
     
@@ -10,20 +16,27 @@ const Header =() =>{
           <>
            <header>
   <div className="container">
-            <Navbar fixed='top' bg="" data-bs-theme="">
-        <Container>
-          <Navbar.Brand href="https://github.com/SuelenGalhardo"><img src={suelenLogo} className='logo__suelen' alt="logo Suelen" /></Navbar.Brand>
-          <Nav className="ml-auto">
+  <Navbar expand="lg" className="" sticky='top'>
+      <Container>
+      <Navbar.Brand href="https://github.com/SuelenGalhardo"><img src={suelenLogo} className='logo__suelen' alt="logo Suelen" /></Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
             <Nav.Link href="#home">Sobre mí</Nav.Link>
-            <Nav.Link href="#features">Proyectos</Nav.Link>
-            <Nav.Link href="#pricing">Contacto</Nav.Link>
+            <Nav.Link href="#proyectos">Proyectos</Nav.Link>
+            <Nav.Link href="https://1drv.ms/b/s!Ao5q2pSOnDnTg51d0WVMuzVvIekr3w?e=csTerI" target='_blank'>CV</Nav.Link>
             
           </Nav>
-        </Container>
-      </Navbar>
-    
-</div>   
+           <Nav style={{gap:'1rem', alignItems:'center'}}>
+                   <a href="https://github.com/SuelenGalhardo" target='_blank' > <img className='icon' src={git} alt='git' ></img></a>
+                   <a href="https://www.linkedin.com/in/suelen-galhardo-12422931/" target='_blank'><img className='icon'  src={linkedin} alt='linkedin'></img></a> 
+            </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+    </div>
      </header>
+  
      </> 
           
         );
