@@ -1,3 +1,5 @@
+import githubLogo from '../assests/githubw.svg';
+import globeWeb from '../assets/globe-solid.svg';
 import arrowRight from '../assets/arrow-right.svg';
 import arrowLeft from '../assets/arrow-left.svg';
 import { useState } from 'react';
@@ -44,16 +46,45 @@ const ProjectSection = ({ projects, hiddenClassProjects }) => {
   // Render the list of the current projects
   const projectLi = currentProjects.map((project) => {
     return (
+
       <li key={project.id} className="projects__container">
+         <img className= "" src={project.img}/>
         <p className="projects__container__title">{project.projectName}</p>
-        
       </li>
+      <div className="containerLogos">
+      <a
+        href={project.link}
+        className="linkProject"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img
+          className="containerLogos__item globe"
+          src={globeWeb}
+          alt="github logo"
+        />
+      </a>
+      <a
+        href={project.github}
+        className="linkGuthubPtoject"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img
+          className="containerLogos__item github"
+          src={githubLogo}
+          alt="github logo"
+        />
+      </a>
+    </div>
     );
   });
 
   return (
     <section className={`projectSection ${hiddenClassProjects}`}>
-      <h3 className="projectSection__title">Projects</h3>
+      <h3 className="projectSection__title">Proyectos</h3>
+      <p>{description}</p>
+
       <section className="projectSection__container">
         <button
           className={`pagination__btn ${displayArrowL}`}
