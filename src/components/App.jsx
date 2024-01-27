@@ -16,7 +16,7 @@ import Rick_and_Morty from '../assets/Rickmorty.png'
 //import './App.scss';
 
 
-const arrayProjects= [
+const projects= [
   {
     id:1,
     img: Anonymous,
@@ -59,7 +59,7 @@ function App() {
         <Header/>
       
         <ProjectSection
-        arrayProjects={arrayProjects}
+        projects={projects}
         />    
 
 
