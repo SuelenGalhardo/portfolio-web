@@ -1,6 +1,8 @@
-//import { useState } from 'react';
+//import React from 'react';
 import suelenLogo from '../assets/logosuelen.png'
 import Nav from 'react-bootstrap/Nav';
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
 
 const Header =() =>{
     
@@ -8,32 +10,18 @@ const Header =() =>{
           <>
            <header>
   <div className="container">
-          
-         
-                
-     
-  <nav className="navbar navbar-expand-lg navbar-light">
-
-  <a className="navbar-brand" href="https://github.com/SuelenGalhardo" target='blank'> <img src={suelenLogo} className="logo__suelen" alt="suelen logo" /></a>
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
-
-  <div className="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul className="navbar-nav ml-auto">
-    <li className="nav-item active">
-        <a className="nav-link" href="#">Sobre mí<span className="sr-only"></span></a>
-      </li>
-      <li className="nav-item active">
-        <a className="nav-link" href="#">Proyectos <span className="sr-only"></span></a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">Contacto</a>
-      </li>
-     </ul>
-  </div>
-</nav>
-
+            <Navbar bg="" data-bs-theme="">
+        <Container>
+          <Navbar.Brand href="https://github.com/SuelenGalhardo"><img src={suelenLogo} className='logo__suelen' alt="logo Suelen" /></Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Sobre mí</Nav.Link>
+            <Nav.Link href="#features">Proyectos</Nav.Link>
+            <Nav.Link href="#pricing">Contacto</Nav.Link>
+            
+          </Nav>
+        </Container>
+      </Navbar>
+    
 </div>   
      </header>
      </> 

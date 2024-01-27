@@ -1,11 +1,12 @@
 
 
 import '../styles/App.scss';
+//import 'bootstrap/dist/css/bootstrap.min.scss';
 import Header from './Header';
 //import Main from './Main';
-//import Projects from './Projects';
+import Projects from './Projects';
 import Footer from './Footer';
-//mport Projects from './Projects';
+
 
 
 //import { useState, } from 'react'
@@ -22,16 +23,16 @@ function App() {
 
   return (
 <>
- 
+
 
         <Header/>
       
-                 
+        <Projects/>    
 
 
        
     
-      <Footer/>
+       <Footer/>
 
 </>
     )
