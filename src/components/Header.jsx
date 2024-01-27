@@ -10,10 +10,10 @@ const Header =() =>{
           <>
            <header>
   <div className="container">
-            <Navbar bg="" data-bs-theme="">
+            <Navbar fixed='top' bg="" data-bs-theme="">
         <Container>
           <Navbar.Brand href="https://github.com/SuelenGalhardo"><img src={suelenLogo} className='logo__suelen' alt="logo Suelen" /></Navbar.Brand>
-          <Nav className="me-auto">
+          <Nav className="ml-auto">
             <Nav.Link href="#home">Sobre mí</Nav.Link>
             <Nav.Link href="#features">Proyectos</Nav.Link>
             <Nav.Link href="#pricing">Contacto</Nav.Link>
