@@ -1,4 +1,4 @@
-import githubLogo from '../assests/githubw.svg';
+import githubLogo from '../assets/githubbw.svg';
 import globeWeb from '../assets/globe-solid.svg';
 import arrowRight from '../assets/arrow-right.svg';
 import arrowLeft from '../assets/arrow-left.svg';
@@ -50,7 +50,8 @@ const ProjectSection = ({ projects, hiddenClassProjects }) => {
       <li key={project.id} className="projects__container">
          <img className= "" src={project.img}/>
         <p className="projects__container__title">{project.projectName}</p>
-      </li>
+        <p>{project.description}</p>
+
       <div className="containerLogos">
       <a
         href={project.link}
@@ -58,6 +59,7 @@ const ProjectSection = ({ projects, hiddenClassProjects }) => {
         target="_blank"
         rel="noreferrer"
       >
+      
         <img
           className="containerLogos__item globe"
           src={globeWeb}
@@ -77,13 +79,14 @@ const ProjectSection = ({ projects, hiddenClassProjects }) => {
         />
       </a>
     </div>
+    </li>
     );
   });
 
   return (
     <section className={`projectSection ${hiddenClassProjects}`}>
       <h3 className="projectSection__title">Proyectos</h3>
-      <p>{description}</p>
+    
 
       <section className="projectSection__container">
         <button
