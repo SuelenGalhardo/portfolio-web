@@ -1,4 +1,5 @@
 .projectSection {
+
     @include flex(unset, unset, column, 0);
     height: 60vh;
     text-align: center;
@@ -85,10 +86,14 @@
       margin: 20px 120px 10px;
       width: 70%;
     }
+    &__img{
+      width: 30px;
+      height: 30px
+    }
     &__container {
       @include flex(center, center, column, 5px);
       font-size: 0.8rem;
-      background-color: #FF6B6B;
+      background-color: rgb(236, 236, 213);
       color: white;
       box-shadow: 3px 3px 3px 3px rgb(28, 28, 28);
       text-align: center;

@@ -48,7 +48,7 @@ const ProjectSection = ({ projects, hiddenClassProjects }) => {
     return (
 
       <li key={project.id} className="projects__container">
-         <img className= "" src={project.img}/>
+         <img className= "projects__img" src={project.img}/>
         <p className="projects__container__title">{project.projectName}</p>
         <p>{project.description}</p>
 
