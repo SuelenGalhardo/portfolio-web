@@ -1,5 +1,5 @@
 .projectSection {
-
+  
     @include flex(unset, unset, column, 0);
     height: 60vh;
     text-align: center;
@@ -8,6 +8,7 @@
     transition: opacity .5s ease-in-out;
     padding-bottom: 50px;
     margin-bottom: 30px;
+    background-color: rgb(236, 236, 213);
     @media screen and (min-width: 1024px) {
       height: 35vh;
       padding-bottom: 110px;
