@@ -1,10 +1,53 @@
-@mixin tablet() {
-  @media all and (min-width: 768px) {
-    @content;
-  }
+//display
+@mixin flex($justify-c, $align-i, $direction, $gap) {
+  display: flex;
+  justify-content: $justify-c;
+  align-items: $align-i;
+  flex-direction: $direction;
+  gap: $gap;
 }
-@mixin desktop() {
-  @media all and (min-width: 1280px) {
-    @content;
-  }
+
+//button
+@mixin button($color, $font-size) {
+  background-color: transparent;
+  color: $color;
+  border: none;
+  font-family: $fontGeneral;
+  font-size: $font-size;
+  margin-top: 1px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin button__hover($width) {
+  color: white;
+  background-color: black;
+  box-shadow: 1px 1px 1px 1px black;
+  border-radius: 10%;
+  height: 25px;
+  width: $width;
+}
+
+//before
+@mixin before__background($opacity, $bg__position, $transition) {
+  content: '';
+  background-image: url(../../images/neuronas.jpg);
+  opacity: $opacity;
+  background-size: cover;
+  background-position: $bg__position;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: $transition;
+}
+
+//hidden with transition
+@mixin hidden__transition() {
+  opacity: 0;
+  height: 0;
+  transition: opacity 2s ease;
+  display: none;
 }
