@@ -1,0 +1,130 @@
+.projectSection {
+    @include flex(unset, unset, column, 0);
+    height: 60vh;
+    text-align: center;
+    font-family: $fontGeneral;
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1024px) {
+      height: 35vh;
+      padding-bottom: 110px;
+      margin-bottom: 50px;
+    }
+    &.hiddenProjectSection {
+      height: 0;
+      opacity: 0;
+      @media screen and (min-width: 1024px) {
+        display: unset;
+        opacity: unset;
+      }
+    }
+    &__title {
+      color: black;
+      margin: 20px 0 20px;
+    }
+    &__container {
+      @include flex(center, center, column, 0);
+      @media screen and (min-width: 1024px) {
+        @include flex(center, center, row, 0);
+      }
+      & .pagination__btn {
+        font-family: $fontGeneral;
+        border: none;
+        background-color: transparent;
+        //opacity: 1;
+        cursor: pointer;
+        &__img {
+          transform: rotate(90deg);
+          width: 18px;
+          color: black;
+          @media screen and (min-width: 1024px) {
+            transform: rotate(0deg);
+            width: 23px;
+            color: black;
+          }
+          &--next {
+            transform: rotate(90deg);
+            width: 18px;
+            color: black;
+            @media screen and (min-width: 1024px) {
+              transform: rotate(0deg);
+              width: 23px;
+              color: black;
+            }
+          }
+        }
+      }
+      & .hiddenArrow {
+        opacity: 0;
+      }
+      & .currentPage {
+        font-size: 0.7rem;
+        color: gray;
+        @media screen and (min-width: 1024px) {
+          position: fixed;
+          bottom: 80px;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+  
+  .projects {
+    @include flex(center, center, column, 15px);
+    height: 35vh;
+    padding: 15px;
+    @media screen and (min-width: 1024px) {
+      align-items: unset;
+      height: 20vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
+      grid-gap: 10px;
+      margin: 20px 120px 10px;
+      width: 70%;
+    }
+    &__container {
+      @include flex(center, center, column, 5px);
+      font-size: 0.8rem;
+      background-color: #FF6B6B;
+      color: white;
+      box-shadow: 3px 3px 3px 3px rgb(28, 28, 28);
+      text-align: center;
+      width: 270px;
+      border-radius: 10%;
+      padding: 10px 0;
+      @media screen and (min-width: 1024px) {
+        @include flex(center, center, column, 10px);
+        box-shadow: 3px 3px 3px 3px #270e29;
+        transition: all 0.3s ease-in-out;
+        background-color: #FF6B6B;
+        color: white;
+        z-index: 1;
+        &:hover {
+          transform: scale(1.1);
+          box-shadow: 0px 0px 5px 2px #C0C0C0;
+          background-color: #1b1919;
+          
+        }
+      }
+      & .containerLogos {
+        @include flex(unset, unset, row, 10px);
+        cursor: pointer;
+        &__item {
+          width: 20px;
+          @media screen and (min-width: 1024px) {
+            width: 20px;
+            transition: all 1s ease;
+            &.globe:hover {
+              transform: rotate(180deg);
+            }
+            &.github:hover {
+              transform: scale(1.3);
+            }
+          }
+        }
+      }
+    }
+  }
