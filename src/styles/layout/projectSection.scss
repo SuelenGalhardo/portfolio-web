@@ -97,15 +97,14 @@
       color: white;
       box-shadow: 3px 3px 3px 3px rgb(28, 28, 28);
       text-align: center;
-      width: 270px;
+      width: 300px;
       border-radius: 10%;
       padding: 10px 0;
       @media screen and (min-width: 1024px) {
         @include flex(center, center, column, 10px);
         box-shadow: 3px 3px 3px 3px #270e29;
         transition: all 0.3s ease-in-out;
-        background-color: #FF6B6B;
-        color: white;
+        background-color: rgb(236, 236, 213);
         z-index: 1;
         &:hover {
           transform: scale(1.1);
@@ -117,6 +116,7 @@
       & .containerLogos {
         @include flex(unset, unset, row, 10px);
         cursor: pointer;
+        border-radius: 50%;
         &__item {
           width: 20px;
           @media screen and (min-width: 1024px) {
