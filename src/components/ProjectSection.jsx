@@ -1,4 +1,4 @@
-import githubLogo from '../assets/githubbw.svg';
+import githubLogo from '../assets/git.svg';
 import globeWeb from '../assets/globe-solid.svg';
 import arrowRight from '../assets/arrow-right.svg';
 import arrowLeft from '../assets/arrow-left.svg';
