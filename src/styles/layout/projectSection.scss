@@ -89,13 +89,14 @@
       width: 70%;
     }
     &__img{
-      width: 50px;
-      height: 50px
+      width: 180px;
+      height: 100px;
+      border-radius: 20%;
     }
     &__container {
       @include flex(center, center, column, 5px);
       font-size: 0.8rem;
-      background-color: rgb(236, 236, 213);
+      background-color:#abdef4;
       color: white;
       box-shadow: 3px 3px 3px 3px rgb(28, 28, 28);
       text-align: center;
@@ -106,12 +107,12 @@
         @include flex(center, center, column, 10px);
         box-shadow: 3px 3px 3px 3px #270e29;
         transition: all 0.3s ease-in-out;
-        background-color: rgb(236, 236, 213);
+        background-color: #abdef4;
         z-index: 1;
         &:hover {
           transform: scale(1.1);
           box-shadow: 0px 0px 5px 2px #C0C0C0;
-          background-color: #1b1919;
+          background-color:#8cd6f6;
           
         }
       }
@@ -119,7 +120,7 @@
         @include flex(unset, unset, row, 10px);
         cursor: pointer;
         border-radius: 50%;
-        background-color: rgb(236, 236, 213);
+       
         &__item {
           width: 20px;
           @media screen and (min-width: 1024px) {
